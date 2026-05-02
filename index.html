@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+<meta name="theme-color" content="#05060f"/>
+<meta name="description" content="Dhanush Kumar S S - Data Analyst & AI Enthusiast Portfolio"/>
+<title>Dhanush Kumar S S</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;800&family=Space+Mono&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<base target="_blank">
+<base target="_blank">
+</head>
+<body>
+
+<!-- Cursor Glow -->
+<div class="cursor-glow"></div>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress"></div>
+
+<!-- Loading Screen -->
+<div class="loader">
+  <div class="loader-text">
+    <span>D</span><span>H</span><span>A</span><span>N</span><span>U</span><span>S</span><span>H</span>
+  </div>
+  <div class="loader-subtitle">Initializing AI Systems...</div>
+  <div class="loader-bar"><div class="loader-progress"></div></div>
+</div>
+
+<!-- Particle Canvas -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- Top Controls -->
+<div class="top-controls">
+  <div class="theme-switcher">
+    <button class="ctrl-btn theme-toggle" title="Change Theme"><i class="fa-solid fa-palette"></i></button>
+    <div class="theme-options">
+      <button data-theme="dark" class="theme-opt" style="background:#05060f"></button>
+      <button data-theme="light" class="theme-opt" style="background:#f5f5f5"></button>
+      <button data-theme="cyber" class="theme-opt" style="background:linear-gradient(135deg,#ff00ff,#00ffff)"></button>
+      <button data-theme="matrix" class="theme-opt" style="background:#001100"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="nav-logo">
+    <span class="logo-text">DK<span class="dot">.</span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link" data-internal="true">Home</a></li>
+    <li><a href="#about" class="nav-link" data-internal="true">About</a></li>
+    <li><a href="#skills" class="nav-link" data-internal="true">Skills</a></li>
+    <li><a href="#projects" class="nav-link" data-internal="true">Projects</a></li>
+    <li><a href="#timeline" class="nav-link" data-internal="true">Journey</a></li>
+    <li><a href="#certifications" class="nav-link" data-internal="true">Certs</a></li>
+    <li><a href="#contact" class="nav-link" data-internal="true">Contact</a></li>
+  </ul>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-greet"><span class="wave">👋</span> Hello, I'm</p>
+      <h1 class="hero-name">
+        <span class="glitch" data-text="Dhanush Kumar">Dhanush Kumar</span>
+        <span class="glitch small" data-text="S S">S S</span>
+      </h1>
+      <h2 class="hero-role">
+        <span class="typing-text"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc">Turning data into insights & ideas into intelligent realities with the power of AI 🤖✨</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary magnetic" data-internal="true">
+          <span>Explore My Work</span><i class="fa-solid fa-rocket"></i>
+        </a>
+        <a href="assets/Dhanush_Kumar_Data_Analyst.pdf" download class="btn btn-secondary magnetic">
+          <span>Download CV</span><i class="fa-solid fa-download"></i>
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/dhanush-kumar-3a6360222/" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Dhanush012003" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:s.s.dhanushsiva121@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-container">
+        <div class="core">
+          <div class="core-inner"><i class="fa-solid fa-brain"></i></div>
+        </div>
+        <div class="orbit orbit-1"><div class="orbit-icon"><i class="fa-solid fa-robot"></i></div></div>
+        <div class="orbit orbit-2"><div class="orbit-icon"><i class="fa-solid fa-chart-line"></i></div></div>
+        <div class="orbit orbit-3"><div class="orbit-icon"><i class="fa-solid fa-database"></i></div></div>
+        <div class="orbit orbit-4"><div class="orbit-icon"><i class="fa-solid fa-code"></i></div></div>
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-tech">
+    <div class="tech-icon" style="--delay:0s"><i class="fab fa-python"></i></div>
+    <div class="tech-icon" style="--delay:1s"><i class="fab fa-js"></i></div>
+    <div class="tech-icon" style="--delay:2s"><i class="fab fa-react"></i></div>
+    <div class="tech-icon" style="--delay:3s"><i class="fab fa-aws"></i></div>
+    <div class="tech-icon" style="--delay:4s"><i class="fab fa-docker"></i></div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll Down</span>
+    <div class="mouse"><div class="wheel"></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-container">
+    <div class="about-card glass">
+      <div class="about-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+      <h3>Who Am I?</h3>
+      <p>I'm <strong>Dhanush Kumar S S</strong>, a Data Analyst & AI Enthusiast with a B.Tech in Artificial Intelligence and Machine Learning. I specialize in transforming raw data into actionable insights and building intelligent systems that solve real-world problems.</p>
+    </div>
+    <div class="about-card glass">
+      <div class="about-icon"><i class="fa-solid fa-bullseye"></i></div>
+      <h3>My Mission</h3>
+      <p>To leverage AI, Data Analytics, and Automation to create innovative solutions that empower businesses, simplify decisions, and shape a smarter future through data-driven strategies.</p>
+    </div>
+    <div class="about-card glass">
+      <div class="about-icon"><i class="fa-solid fa-lightbulb"></i></div>
+      <h3>What I Do</h3>
+      <p>From data cleaning and visualization to building ML models and AI-powered dashboards — I turn complex datasets into elegant, actionable solutions that drive business growth.</p>
+    </div>
+  </div>
+
+  <div class="terminal glass">
+    <div class="terminal-header">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span class="terminal-title">dhanush@portfolio: ~</span>
+    </div>
+    <div class="terminal-body">
+      <p><span class="prompt">$</span> <span class="terminal-text"></span><span class="term-cursor">_</span></p>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-box"><h3 class="counter" data-target="15">0</h3><p>Projects</p></div>
+    <div class="stat-box"><h3 class="counter" data-target="5">0</h3><p>AI Models</p></div>
+    <div class="stat-box"><h3 class="counter" data-target="100">0</h3><p>Datasets</p></div>
+    <div class="stat-box"><h3 class="counter" data-target="15">0</h3><p>Tools Mastered</p></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+      <h3>Python</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+      <h3>SQL</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-chart-column"></i></div>
+      <h3>Power BI</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-file-excel"></i></div>
+      <h3>Excel / Google Sheets</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div>
+      <h3>Data Analysis, Cleaning, Visualization, Transformation, EDA</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-brands fa-jira"></i></div>
+      <h3>Jira</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+      <h3>AI Automation, Prompting & Agents</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+      <h3>Machine Learning</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+      <h3>Deep Learning</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+      <h3>Pandas / NumPy</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+      <h3>TensorFlow</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-fire"></i></div>
+      <h3>PySpark</h3>
+      <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+    </div>
+  </div>
+
+  <div class="chart-container glass">
+    <h3>Tech Distribution</h3>
+    <canvas id="skillChart"></canvas>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-scroll-container">
+    <button class="scroll-btn scroll-left" aria-label="Scroll left"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="projects-scroll">
+      <div class="project-card">
+        <div class="project-img"><i class="fa-solid fa-utensils"></i></div>
+        <h3>Swiggy Data Analysis</h3>
+        <p>Cleaned and processed datasets using Python (Pandas, NumPy). Performed EDA to identify trends and customer behavior patterns. Developed interactive Power BI dashboards with DAX and calculated measures.</p>
+        <div class="project-tags"><span>Python</span><span>Pandas</span><span>Power BI</span><span>DAX</span></div>
+        <a href="https://github.com/Dhanush012003" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><i class="fa-solid fa-tower-cell"></i></div>
+        <h3>Telecom Customer Churn Analysis</h3>
+        <p>Performed data cleaning and preprocessing using Python and SQL. Built a Random Forest model to predict customer churn with ~82% accuracy. Developed interactive Power BI dashboards for churn insights.</p>
+        <div class="project-tags"><span>Python</span><span>SQL</span><span>Random Forest</span><span>Power BI</span></div>
+        <a href="https://github.com/Dhanush012003" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><i class="fa-solid fa-leaf"></i></div>
+        <h3>ESG Data Assurance</h3>
+        <p>Validated and ensured quality of ESG datasets across multiple clients. Performed data validation and issue resolution for client-facing reporting. Acted as POC managing data requests and coordinating with teams.</p>
+        <div class="project-tags"><span>Data Validation</span><span>Quality Assurance</span><span>Client Reporting</span></div>
+        <a href="https://github.com/Dhanush012003" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><i class="fa-brands fa-amazon"></i></div>
+        <h3>Amazon Delivery Data Quality Testing</h3>
+        <p>Performed comprehensive QA and testing on Amazon delivery datasets to ensure accuracy and consistency before client delivery. Identified and resolved data discrepancies with technical teams.</p>
+        <div class="project-tags"><span>QA Testing</span><span>Data Validation</span><span>Issue Resolution</span></div>
+        <a href="https://github.com/Dhanush012003" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><i class="fa-solid fa-cart-shopping"></i></div>
+        <h3>Walmart Sales Analysis</h3>
+        <p>Analyzed Walmart sales data using Python and MySQL to uncover trends and generate actionable business insights. Created visualizations to support data-driven decision making.</p>
+        <div class="project-tags"><span>Python</span><span>MySQL</span><span>Data Visualization</span></div>
+        <a href="https://github.com/Dhanush012003" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <button class="scroll-btn scroll-right" aria-label="Scroll right"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="timeline-section">
+  <h2 class="section-title">My Journey</h2>
+  <div class="timeline">
+    <div class="tl-item left">
+      <div class="tl-content glass">
+        <div class="tl-date">2020 - 2024</div>
+        <h3>🎓 B.Tech in AI & ML</h3>
+        <p>Hindusthan College of Engineering and Technology. Completed B.Tech in Artificial Intelligence and Machine Learning with 90% aggregate.</p>
+      </div>
+    </div>
+    <div class="tl-item right">
+      <div class="tl-content glass">
+        <div class="tl-date">2023</div>
+        <h3>🤖 IBM SkillsBuild AICTE Internship</h3>
+        <p>Completed 6-week internship in Data Analytics. Gained hands-on experience in data cleaning, analysis, visualization, and understanding business metrics and KPIs.</p>
+      </div>
+    </div>
+    <div class="tl-item left">
+      <div class="tl-content glass">
+        <div class="tl-date">Feb 2024 - Present</div>
+        <h3>📊 Data Quality Analyst at Arcadia - Urjanet</h3>
+        <p>Started as Intern, converted to Full-Time. Analyzing large-scale datasets, performing data cleaning, transformation, and validation. Tracking KPIs and automating tasks with Python and Excel.</p>
+      </div>
+    </div>
+    <div class="tl-item right">
+      <div class="tl-content glass">
+        <div class="tl-date">2024 - Present</div>
+        <h3>🚀 AI & Data Projects</h3>
+        <p>Built multiple real-world projects including Swiggy Analysis, Telecom Churn Prediction, ESG Data Assurance, Amazon Delivery QA, and Walmart Sales Analysis.</p>
+      </div>
+    </div>
+    <div class="tl-item left">
+      <div class="tl-content glass">
+        <div class="tl-date">2025</div>
+        <h3>✨ The Future</h3>
+        <p>Pushing boundaries with Generative AI, Agentic AI concepts, and n8n automation. Open to opportunities and collaborations in AI and Data Analytics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="certifications">
+  <h2 class="section-title">Certifications</h2>
+  <div class="certs-grid">
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+      <h3>Python 101 for Data Science</h3>
+      <p class="cert-issuer">IBM</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+      <h3>Data Analysis with Python</h3>
+      <p class="cert-issuer">IBM</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-solid fa-chart-pie"></i></div>
+      <h3>Data Visualization Using Python</h3>
+      <p class="cert-issuer">IBM</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-solid fa-broom"></i></div>
+      <h3>Process Data from Dirty to Clean</h3>
+      <p class="cert-issuer">Google</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+      <h3>Clean Coding</h3>
+      <p class="cert-issuer">Google</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+      <h3>SQL</h3>
+      <p class="cert-issuer">NASSCOM</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+      <h3>AI for Everyone</h3>
+      <p class="cert-issuer">DeepLearning.AI</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+      <h3>Automating Tasks Using Automation 360 Excel Advanced Actions</h3>
+      <p class="cert-issuer">Automation Anywhere</p>
+    </div>
+    <div class="cert-card glass">
+      <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <h3>Advanced Python Programming</h3>
+      <p class="cert-issuer">IEEE</p>
+    </div>
+  </div>
+</section>
+
+<!-- EARTH SECTION -->
+<section class="earth-section">
+  <h2 class="section-title">Available Globally</h2>
+  <p class="earth-subtitle">Working with clients across the world 🌍</p>
+  <div class="earth-container">
+    <div class="earth"></div>
+    <div class="earth-orbit">
+      <div class="satellite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Let's Connect</h2>
+  <div class="contact-container">
+    <div class="contact-info glass">
+      <h3>Get In Touch 🚀</h3>
+      <p>Have a project in mind? Let's create something amazing together!</p>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i><span>s.s.dhanushsiva121@gmail.com</span></div>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i><span>dhanushsivadk@gmail.com</span></div>
+      <div class="contact-item"><i class="fa-solid fa-phone"></i><span>+91 9789370450</span></div>
+      <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>India</span></div>
+      <div class="contact-socials">
+        <a href="https://www.linkedin.com/in/dhanush-kumar-3a6360222/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Dhanush012003" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:s.s.dhanushsiva121@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <svg class="signature" viewBox="0 0 300 80">
+        <path d="M20,50 Q40,10 60,50 T100,50 Q120,20 140,50 L160,30 Q180,60 200,30 T240,40 L260,50" fill="none" stroke="url(#sigGrad)" stroke-width="2.5"/>
+        <defs>
+          <linearGradient id="sigGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#00f0ff"/>
+            <stop offset="100%" style="stop-color:#ff3cac"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <form class="contact-form glass">
+      <div class="form-group">
+        <input type="text" required>
+        <label>Your Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" required>
+        <label>Your Email</label>
+      </div>
+      <div class="form-group">
+        <input type="text" required>
+        <label>Subject</label>
+      </div>
+      <div class="form-group">
+        <textarea rows="5" required></textarea>
+        <label>Your Message</label>
+      </div>
+      <button type="submit" class="btn btn-primary magnetic">
+        <span>Send Message</span><i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Dhanush Kumar S S <i class="fa-solid fa-heart" style="color:#ff3cac"></i></p>
+</footer>
+
+<!-- AI Chatbot -->
+<div class="chatbot-toggle"><i class="fa-solid fa-robot"></i><span class="chat-pulse"></span></div>
+<div class="chatbot">
+  <div class="chatbot-header">
+    <div class="bot-info">
+      <div class="bot-avatar"><i class="fa-solid fa-robot"></i></div>
+      <div>
+        <h4>Nexus 🤖</h4>
+        <p class="bot-status">● Online</p>
+      </div>
+    </div>
+    <button class="chatbot-close"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="chatbot-body">
+    <div class="msg bot">
+      <p>Hi there! 👋 I'm Nexus. Ask me anything about Dhanush!</p>
+    </div>
+    <div class="quick-replies">
+      <button class="quick-reply">About Dhanush</button>
+      <button class="quick-reply">Skills</button>
+      <button class="quick-reply">Projects</button>
+      <button class="quick-reply">Contact</button>
+      <button class="quick-reply">Hire Him</button>
+    </div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" placeholder="Type a message..." id="chatInput">
+    <button id="chatSend"><i class="fa-solid fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Easter Egg Game Modal -->
+<div class="game-modal">
+  <div class="game-content glass">
+    <button class="game-close"><i class="fa-solid fa-xmark"></i></button>
+    <h2>🎮 Snake Game - Konami Code Activated!</h2>
+    <p class="game-score">Score: <span id="score">0</span></p>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <p class="game-instr">Use Arrow Keys to play</p>
+  </div>
+</div>
+
+<!-- Confetti Canvas -->
+<canvas id="confetti-canvas"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
