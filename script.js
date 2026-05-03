@@ -98,7 +98,7 @@ if(pCanvas && !isMobile){
 }
 
 /* ============ TYPING EFFECT ============ */
-const roles=["AI Enthusiast 🤖","Data Analyst 📊","Problem Solver 💡","Creative Coder 🎨"];
+const roles=["AI Practitioner 🤖","Data Analyst 📊","Problem Solver 💡","Creative Coder 🎨"];
 let roleIdx=0,charIdx=0,isDeleting=false;
 const typingEl=document.querySelector('.typing-text');
 if(typingEl){
@@ -118,7 +118,7 @@ if(typingEl){
 
 /* ============ TERMINAL ============ */
 const termCommands=[
-  "whoami → Dhanush Kumar S S, AI Enthusiast & Data Analyst 🚀",
+  "whoami → Dhanush Kumar S S, AI Practitioner & Data Analyst 🚀",
   "skills → Python, ML, Deep Learning, SQL, Data Viz, NLP, AI Prompting",
   "passion → Building AI that solves real-world problems 🤖",
   "status → Open to opportunities & collaborations ✨",
@@ -355,8 +355,8 @@ if(chatClose && chatbot){
 }
 
 const botResponses={
-  'about':"Dhanush Kumar S S is an AI Enthusiast & Data Analyst with a B.Tech in AI & ML. He loves transforming data into insights and building intelligent systems! 🤖",
-  'about dhanush':"Dhanush Kumar S S is an AI Enthusiast & Data Analyst with a B.Tech in AI & ML. He loves transforming data into insights and building intelligent systems! 🤖",
+  'about':"Dhanush Kumar S S is an AI Practitioner & Data Analyst with a B.Tech in AI & ML. He loves transforming data into insights and building intelligent systems! 🤖",
+  'about dhanush':"Dhanush Kumar S S is an AI Practitioner & Data Analyst with a B.Tech in AI & ML. He loves transforming data into insights and building intelligent systems! 🤖",
   'skills':"His top skills include: Python 🐍, SQL 🗃️, Power BI 📈, Excel 📊, Data Analysis & EDA, Jira, AI Automation & Prompting, Machine Learning 🧠, Deep Learning 🤖, Pandas/NumPy, TensorFlow, and PySpark!",
   'projects':"He's built amazing projects like Swiggy Data Analysis, Telecom Customer Churn Prediction, ESG Data Assurance, Amazon Delivery QA, and Walmart Sales Analysis! Check his GitHub for more! 🚀",
   'contact':"You can reach him at s.s.dhanushsiva121@gmail.com or dhanushsivadk@gmail.com. Phone: +91 9789370450. He responds quickly! 📩",
