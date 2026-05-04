@@ -375,7 +375,7 @@ const botResponses={
   'bye':"Goodbye! Have a great day! 👋",
   'ai':"AI is Dhanush's passion! He builds ML models, NLP solutions, Deep Learning systems, and explores Agentic AI and n8n automation regularly! 🤖",
   'data':"Dhanush is a data wizard! 📊 He loves cleaning, analyzing, and visualizing data to uncover insights.",
-  'github':"Check out his GitHub: https://github.com/Dhanush012003 🚀",
+  'github':"Check out his GitHub: https://github.com/dhanushsivadk 🚀",
   'linkedin':"Connect with him on LinkedIn: https://www.linkedin.com/in/dhanush-kumar-3a6360222/ 💼",
   'certifications':"Dhanush is certified in: Python 101 for Data Science (IBM), Data Analysis with Python (IBM), Data Visualization Using Python (IBM), Process Data from Dirty to Clean (Google), Clean Coding (Google), SQL (NASSCOM), AI for Everyone (DeepLearning.AI), Automation 360 Excel Advanced Actions (Automation Anywhere), and Advanced Python Programming (IEEE)! 🏆"
 };
